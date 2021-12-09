@@ -1,0 +1,35 @@
+div-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+header {
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+h2 {
+    margin: auto;
+    border: 3px solid black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+img {
+    width: 70%;
+    border: 10px solid black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
