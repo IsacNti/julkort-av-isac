@@ -1,9 +1,13 @@
+html {
+    height: 100%;
+}
+
 body {
     display: flex;
     justify-content: center;
-    padding-top: 3%;
     background-image: url(backgrund.jpg);
     background-size: 100vw;
+    height: 100%;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -13,6 +17,8 @@ body {
     height: 400px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     display: flex;
+    width: 50vw;
+    height: 40vw;
 }
   
 /* This container is needed to position the front and back side */
@@ -24,12 +30,16 @@ body {
     transition: transform 0.8s;
     transform-style: preserve-3d;
     display: flex;
+    width: 50vw;
+    height: 40vw;
 }
   
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg); 
     display: flex;
+    width: 50vw;
+    height: 40vw;
 }
   
 /* Position the front and back side */
@@ -40,6 +50,8 @@ body {
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
     display: flex;
+    width: 50vw;
+    height: 40vw;
 }
   
 /* Style the front side (fallback if image is missing) */
@@ -47,6 +59,8 @@ body {
     background-color: #bbb;
     color: black;
     display: flex;
+    width: 50vw;
+    height: 40vw;
 }
   
 /* Style the back side */
@@ -55,6 +69,8 @@ body {
     color: rgb(0, 0, 0);
     transform: rotateY(180deg);
     display: flex;
+    width: 50vw;
+    height: 40vw;
 }
 
 div{
